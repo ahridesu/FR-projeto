@@ -1,0 +1,16 @@
+Jan 19 18:56:18.040 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 19 18:56:18.040 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 38087.
+Jan 19 18:56:18.050 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 19 18:56:18.051 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ahri/Desktop/FR/FR/Projeto/FR_2020/project-files/dynamips 
+Jan 19 18:56:18.051 GENERAL: working_dir=/home/ahri/Desktop/FR/FR/Projeto/FR_2020/project-files/dynamips
+Jan 19 18:56:18.051 HYPERVISOR: exec_cmd: ethsw create Pisos0-10 
+Jan 19 18:56:21.882 HYPERVISOR: exec_cmd: nio create_udp udp-3b12fd7c-3d26-4a65-be75-57d5288ed197 10079 127.0.0.1 10078 
+Jan 19 18:56:21.882 HYPERVISOR: exec_cmd: ethsw add_nio Pisos0-10 udp-3b12fd7c-3d26-4a65-be75-57d5288ed197 
+Jan 19 18:56:21.900 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Pisos0-10 udp-3b12fd7c-3d26-4a65-be75-57d5288ed197 1 
+Jan 19 18:56:22.254 HYPERVISOR: exec_cmd: nio create_udp udp-f0b80561-a6f1-4a15-a367-e7eecaf21367 10092 127.0.0.1 10093 
+Jan 19 18:56:22.254 HYPERVISOR: exec_cmd: ethsw add_nio Pisos0-10 udp-f0b80561-a6f1-4a15-a367-e7eecaf21367 
+Jan 19 18:56:22.262 HYPERVISOR: exec_cmd: ethsw set_access_port Pisos0-10 udp-f0b80561-a6f1-4a15-a367-e7eecaf21367 2 
+Jan 19 19:16:29.061 HYPERVISOR: exec_cmd: ethsw delete Pisos0-10 
+Jan 19 19:16:29.133 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 19 19:16:29.556 HYPERVISOR: Stopped.
+Jan 19 19:16:29.556 GENERAL: reset done.

@@ -1,0 +1,82 @@
+Jan 19 18:56:18.119 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 19 18:56:18.119 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51905.
+Jan 19 18:56:18.129 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 19 18:56:18.130 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ahri/Desktop/FR/FR/Projeto/FR_2020/project-files/dynamips 
+Jan 19 18:56:18.130 GENERAL: working_dir=/home/ahri/Desktop/FR/FR/Projeto/FR_2020/project-files/dynamips
+Jan 19 18:56:18.130 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ahri/Desktop/FR/FR/Projeto/FR_2020/project-files/dynamips/cb586ba8-a6ed-43d4-b840-ce4e81e58ebb 
+Jan 19 18:56:18.130 GENERAL: working_dir=/home/ahri/Desktop/FR/FR/Projeto/FR_2020/project-files/dynamips/cb586ba8-a6ed-43d4-b840-ce4e81e58ebb
+Jan 19 18:56:18.130 HYPERVISOR: exec_cmd: vm create SWL3F2 1 c3725 
+Jan 19 18:56:18.130 VM: VM SWL3F2 created.
+Jan 19 18:56:18.131 HYPERVISOR: exec_cmd: vm set_con_tcp_port SWL3F2 5039 
+Jan 19 18:56:18.131 HYPERVISOR: exec_cmd: c3725 get_mac_addr SWL3F2 
+Jan 19 18:56:18.131 HYPERVISOR: exec_cmd: vm set_disk0 SWL3F2 1 
+Jan 19 18:56:18.131 HYPERVISOR: exec_cmd: vm get_status SWL3F2 
+Jan 19 18:56:18.131 HYPERVISOR: exec_cmd: vm set_idle_pc SWL3F2 0x60a68e70 
+Jan 19 18:56:18.132 HYPERVISOR: exec_cmd: vm set_ios SWL3F2 /home/ahri/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 19 18:56:18.132 HYPERVISOR: exec_cmd: c3725 set_mac_addr SWL3F2 c201.30db.0000 
+Jan 19 18:56:18.132 HYPERVISOR: exec_cmd: vm set_nvram SWL3F2 256 
+Jan 19 18:56:18.133 HYPERVISOR: exec_cmd: vm get_status SWL3F2 
+Jan 19 18:56:18.133 HYPERVISOR: exec_cmd: vm slot_add_binding SWL3F2 1 0 NM-16ESW 
+Jan 19 18:56:21.158 HYPERVISOR: exec_cmd: nio create_udp udp-9baea0be-edf0-4b92-97f1-e59f8391f34a 10058 127.0.0.1 10059 
+Jan 19 18:56:21.372 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3F2 1 0 udp-9baea0be-edf0-4b92-97f1-e59f8391f34a 
+Jan 19 18:56:21.374 HYPERVISOR: exec_cmd: vm get_status SWL3F2 
+Jan 19 18:56:21.820 HYPERVISOR: exec_cmd: nio create_udp udp-83cf8f2a-216b-48af-9859-44310d88902b 10076 127.0.0.1 10077 
+Jan 19 18:56:21.821 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3F2 1 1 udp-83cf8f2a-216b-48af-9859-44310d88902b 
+Jan 19 18:56:21.822 HYPERVISOR: exec_cmd: vm get_status SWL3F2 
+Jan 19 18:56:22.476 HYPERVISOR: exec_cmd: nio create_udp udp-a4e2447a-74ce-4c3d-8fe1-343d92947948 10100 127.0.0.1 10101 
+Jan 19 18:56:22.478 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3F2 1 2 udp-a4e2447a-74ce-4c3d-8fe1-343d92947948 
+Jan 19 18:56:22.478 HYPERVISOR: exec_cmd: vm get_status SWL3F2 
+Jan 19 18:56:22.540 HYPERVISOR: exec_cmd: nio create_udp udp-8496853d-2c96-4180-ae89-62e450aab611 10106 127.0.0.1 10107 
+Jan 19 18:56:22.541 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3F2 1 4 udp-8496853d-2c96-4180-ae89-62e450aab611 
+Jan 19 18:56:22.541 HYPERVISOR: exec_cmd: vm get_status SWL3F2 
+Jan 19 18:56:22.805 HYPERVISOR: exec_cmd: nio create_udp udp-1e92617a-0396-4542-a400-5c034b9ad28b 10116 127.0.0.1 10117 
+Jan 19 18:56:22.807 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3F2 1 3 udp-1e92617a-0396-4542-a400-5c034b9ad28b 
+Jan 19 18:56:22.807 HYPERVISOR: exec_cmd: vm get_status SWL3F2 
+Jan 19 18:58:36.748 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Jan 19 18:58:36.748 VM: VM Ghost created.
+Jan 19 18:58:36.749 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/ahri/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 19 18:58:36.751 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jan 19 18:58:36.751 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/ahri/Desktop/FR/FR/Projeto/FR_2020/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 19 18:58:36.752 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 19 18:58:37.041 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Jan 19 18:58:37.042 HYPERVISOR: exec_cmd: vm start Ghost 
+Jan 19 18:58:38.442 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 19 18:58:38.442 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jan 19 18:58:38.508 VM: VM Ghost shutdown.
+Jan 19 18:58:38.509 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jan 19 18:58:38.510 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jan 19 18:58:38.510 VM: VM Ghost destroyed.
+Jan 19 18:58:38.511 HYPERVISOR: exec_cmd: vm set_ghost_status SWL3F2 2 
+Jan 19 18:58:38.511 HYPERVISOR: exec_cmd: vm set_ghost_file SWL3F2 /home/ahri/Desktop/FR/FR/Projeto/FR_2020/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 19 18:58:38.511 HYPERVISOR: exec_cmd: vm get_status SWL3F2 
+Jan 19 18:58:38.514 HYPERVISOR: exec_cmd: vm set_config SWL3F2 configs/i1_startup-config.cfg 
+Jan 19 18:58:38.515 HYPERVISOR: exec_cmd: vm start SWL3F2 
+Jan 19 19:01:10.527 HYPERVISOR: exec_cmd: vm set_ghost_status SWL3F2 2 
+Jan 19 19:01:10.804 HYPERVISOR: exec_cmd: vm set_ghost_file SWL3F2 /home/ahri/Desktop/FR/FR/Projeto/FR_2020/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 19 19:01:10.804 HYPERVISOR: exec_cmd: vm get_status SWL3F2 
+Jan 19 19:02:47.915 HYPERVISOR: exec_cmd: vm set_ghost_status SWL3F2 2 
+Jan 19 19:02:47.917 HYPERVISOR: exec_cmd: vm set_ghost_file SWL3F2 /home/ahri/Desktop/FR/FR/Projeto/FR_2020/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 19 19:02:47.918 HYPERVISOR: exec_cmd: vm get_status SWL3F2 
+Jan 19 19:03:26.658 HYPERVISOR: exec_cmd: vm set_ghost_status SWL3F2 2 
+Jan 19 19:03:26.661 HYPERVISOR: exec_cmd: vm set_ghost_file SWL3F2 /home/ahri/Desktop/FR/FR/Projeto/FR_2020/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 19 19:03:26.662 HYPERVISOR: exec_cmd: vm get_status SWL3F2 
+Jan 19 19:14:12.561 HYPERVISOR: exec_cmd: vm get_status SWL3F2 
+Jan 19 19:14:12.799 HYPERVISOR: exec_cmd: vm stop SWL3F2 
+Jan 19 19:14:13.145 VM: VM SWL3F2 shutdown.
+Jan 19 19:14:13.146 HYPERVISOR: exec_cmd: vm extract_config SWL3F2 
+Jan 19 19:14:24.913 HYPERVISOR: exec_cmd: vm set_ghost_status SWL3F2 2 
+Jan 19 19:14:24.915 HYPERVISOR: exec_cmd: vm set_ghost_file SWL3F2 /home/ahri/Desktop/FR/FR/Projeto/FR_2020/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 19 19:14:24.916 HYPERVISOR: exec_cmd: vm get_status SWL3F2 
+Jan 19 19:14:25.763 HYPERVISOR: exec_cmd: vm set_config SWL3F2 configs/i1_startup-config.cfg 
+Jan 19 19:14:25.765 HYPERVISOR: exec_cmd: vm start SWL3F2 
+Jan 19 19:16:23.842 HYPERVISOR: exec_cmd: vm get_status SWL3F2 
+Jan 19 19:16:23.895 HYPERVISOR: exec_cmd: vm stop SWL3F2 
+Jan 19 19:16:24.111 VM: VM SWL3F2 shutdown.
+Jan 19 19:16:24.111 HYPERVISOR: exec_cmd: vm extract_config SWL3F2 
+Jan 19 19:16:29.272 HYPERVISOR: exec_cmd: vm get_status SWL3F2 
+Jan 19 19:16:29.273 HYPERVISOR: exec_cmd: vm extract_config SWL3F2 
+Jan 19 19:16:29.274 HYPERVISOR: exec_cmd: vm delete SWL3F2 
+Jan 19 19:16:29.274 VM: VM SWL3F2 destroyed.
+Jan 19 19:16:29.275 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 19 19:16:29.638 HYPERVISOR: Stopped.
+Jan 19 19:16:29.638 GENERAL: reset done.

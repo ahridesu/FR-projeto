@@ -1,0 +1,74 @@
+Jan 19 18:56:18.176 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 19 18:56:18.176 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 55827.
+Jan 19 18:56:18.186 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 19 18:56:18.186 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ahri/Desktop/FR/FR/Projeto/FR_2020/project-files/dynamips 
+Jan 19 18:56:18.186 GENERAL: working_dir=/home/ahri/Desktop/FR/FR/Projeto/FR_2020/project-files/dynamips
+Jan 19 18:56:18.187 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ahri/Desktop/FR/FR/Projeto/FR_2020/project-files/dynamips/8a52d528-542f-4dad-9a90-e010029d89f0 
+Jan 19 18:56:18.187 GENERAL: working_dir=/home/ahri/Desktop/FR/FR/Projeto/FR_2020/project-files/dynamips/8a52d528-542f-4dad-9a90-e010029d89f0
+Jan 19 18:56:18.187 HYPERVISOR: exec_cmd: vm create SWL3C1 3 c3725 
+Jan 19 18:56:18.187 VM: VM SWL3C1 created.
+Jan 19 18:56:18.187 HYPERVISOR: exec_cmd: vm set_con_tcp_port SWL3C1 5041 
+Jan 19 18:56:18.187 HYPERVISOR: exec_cmd: c3725 get_mac_addr SWL3C1 
+Jan 19 18:56:18.188 HYPERVISOR: exec_cmd: vm set_disk0 SWL3C1 1 
+Jan 19 18:56:18.188 HYPERVISOR: exec_cmd: vm get_status SWL3C1 
+Jan 19 18:56:18.188 HYPERVISOR: exec_cmd: vm set_idle_pc SWL3C1 0x60a68e70 
+Jan 19 18:56:18.189 HYPERVISOR: exec_cmd: vm set_ios SWL3C1 /home/ahri/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 19 18:56:18.189 HYPERVISOR: exec_cmd: c3725 set_mac_addr SWL3C1 c203.30fb.0000 
+Jan 19 18:56:18.189 HYPERVISOR: exec_cmd: vm set_nvram SWL3C1 256 
+Jan 19 18:56:18.189 HYPERVISOR: exec_cmd: vm get_status SWL3C1 
+Jan 19 18:56:18.189 HYPERVISOR: exec_cmd: vm slot_add_binding SWL3C1 1 0 NM-16ESW 
+Jan 19 18:56:18.803 HYPERVISOR: exec_cmd: nio create_udp udp-5083d1a1-dd11-41d6-8444-ed17dcc72dfe 10002 127.0.0.1 10003 
+Jan 19 18:56:19.018 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3C1 0 0 udp-5083d1a1-dd11-41d6-8444-ed17dcc72dfe 
+Jan 19 18:56:19.019 HYPERVISOR: exec_cmd: vm get_status SWL3C1 
+Jan 19 18:56:19.632 HYPERVISOR: exec_cmd: nio create_udp udp-9b936d1d-a5a6-4343-87d0-f74a680c34bf 10014 127.0.0.1 10015 
+Jan 19 18:56:19.633 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3C1 0 1 udp-9b936d1d-a5a6-4343-87d0-f74a680c34bf 
+Jan 19 18:56:19.633 HYPERVISOR: exec_cmd: vm get_status SWL3C1 
+Jan 19 18:56:19.987 HYPERVISOR: exec_cmd: nio create_udp udp-5b8e2fb6-22f5-4ccf-90e7-012a7de0dece 10026 127.0.0.1 10027 
+Jan 19 18:56:19.988 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3C1 1 0 udp-5b8e2fb6-22f5-4ccf-90e7-012a7de0dece 
+Jan 19 18:56:19.988 HYPERVISOR: exec_cmd: vm get_status SWL3C1 
+Jan 19 18:56:20.059 HYPERVISOR: exec_cmd: nio create_udp udp-962b7448-2a4a-439c-bd3a-9111b7915167 10030 127.0.0.1 10031 
+Jan 19 18:56:20.060 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3C1 1 1 udp-962b7448-2a4a-439c-bd3a-9111b7915167 
+Jan 19 18:56:20.061 HYPERVISOR: exec_cmd: vm get_status SWL3C1 
+Jan 19 18:56:20.118 HYPERVISOR: exec_cmd: nio create_udp udp-899c209f-a998-46cb-af0c-f795a27d0e50 10034 127.0.0.1 10035 
+Jan 19 18:56:20.120 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3C1 1 2 udp-899c209f-a998-46cb-af0c-f795a27d0e50 
+Jan 19 18:56:20.120 HYPERVISOR: exec_cmd: vm get_status SWL3C1 
+Jan 19 18:56:21.150 HYPERVISOR: exec_cmd: nio create_udp udp-86c53600-c13e-4cee-8b44-9e39d28fdd39 10056 127.0.0.1 10057 
+Jan 19 18:56:21.151 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3C1 1 3 udp-86c53600-c13e-4cee-8b44-9e39d28fdd39 
+Jan 19 18:56:21.151 HYPERVISOR: exec_cmd: vm get_status SWL3C1 
+Jan 19 18:56:21.755 HYPERVISOR: exec_cmd: nio create_udp udp-d933adad-64e2-4279-9cc1-6afb5c2e01e7 10068 127.0.0.1 10069 
+Jan 19 18:56:21.756 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3C1 1 4 udp-d933adad-64e2-4279-9cc1-6afb5c2e01e7 
+Jan 19 18:56:21.756 HYPERVISOR: exec_cmd: vm get_status SWL3C1 
+Jan 19 18:58:38.516 HYPERVISOR: exec_cmd: vm set_ghost_status SWL3C1 2 
+Jan 19 18:58:38.517 HYPERVISOR: exec_cmd: vm set_ghost_file SWL3C1 /home/ahri/Desktop/FR/FR/Projeto/FR_2020/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 19 18:58:38.518 HYPERVISOR: exec_cmd: vm get_status SWL3C1 
+Jan 19 18:58:38.518 HYPERVISOR: exec_cmd: vm set_config SWL3C1 configs/i3_startup-config.cfg 
+Jan 19 18:58:38.518 HYPERVISOR: exec_cmd: vm start SWL3C1 
+Jan 19 19:01:10.804 HYPERVISOR: exec_cmd: vm set_ghost_status SWL3C1 2 
+Jan 19 19:01:10.814 HYPERVISOR: exec_cmd: vm set_ghost_file SWL3C1 /home/ahri/Desktop/FR/FR/Projeto/FR_2020/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 19 19:01:10.814 HYPERVISOR: exec_cmd: vm get_status SWL3C1 
+Jan 19 19:02:47.922 HYPERVISOR: exec_cmd: vm set_ghost_status SWL3C1 2 
+Jan 19 19:02:47.923 HYPERVISOR: exec_cmd: vm set_ghost_file SWL3C1 /home/ahri/Desktop/FR/FR/Projeto/FR_2020/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 19 19:02:47.923 HYPERVISOR: exec_cmd: vm get_status SWL3C1 
+Jan 19 19:03:26.672 HYPERVISOR: exec_cmd: vm set_ghost_status SWL3C1 2 
+Jan 19 19:03:26.673 HYPERVISOR: exec_cmd: vm set_ghost_file SWL3C1 /home/ahri/Desktop/FR/FR/Projeto/FR_2020/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 19 19:03:26.673 HYPERVISOR: exec_cmd: vm get_status SWL3C1 
+Jan 19 19:14:12.565 HYPERVISOR: exec_cmd: vm get_status SWL3C1 
+Jan 19 19:14:12.788 HYPERVISOR: exec_cmd: vm stop SWL3C1 
+Jan 19 19:14:13.145 VM: VM SWL3C1 shutdown.
+Jan 19 19:14:13.146 HYPERVISOR: exec_cmd: vm extract_config SWL3C1 
+Jan 19 19:14:25.768 HYPERVISOR: exec_cmd: vm set_ghost_status SWL3C1 2 
+Jan 19 19:14:25.768 HYPERVISOR: exec_cmd: vm set_ghost_file SWL3C1 /home/ahri/Desktop/FR/FR/Projeto/FR_2020/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 19 19:14:25.769 HYPERVISOR: exec_cmd: vm get_status SWL3C1 
+Jan 19 19:14:25.769 HYPERVISOR: exec_cmd: vm set_config SWL3C1 configs/i3_startup-config.cfg 
+Jan 19 19:14:25.769 HYPERVISOR: exec_cmd: vm start SWL3C1 
+Jan 19 19:16:23.845 HYPERVISOR: exec_cmd: vm get_status SWL3C1 
+Jan 19 19:16:23.873 HYPERVISOR: exec_cmd: vm stop SWL3C1 
+Jan 19 19:16:24.084 VM: VM SWL3C1 shutdown.
+Jan 19 19:16:24.085 HYPERVISOR: exec_cmd: vm extract_config SWL3C1 
+Jan 19 19:16:29.446 HYPERVISOR: exec_cmd: vm get_status SWL3C1 
+Jan 19 19:16:29.447 HYPERVISOR: exec_cmd: vm extract_config SWL3C1 
+Jan 19 19:16:29.448 HYPERVISOR: exec_cmd: vm delete SWL3C1 
+Jan 19 19:16:29.448 VM: VM SWL3C1 destroyed.
+Jan 19 19:16:29.449 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 19 19:16:29.671 HYPERVISOR: Stopped.
+Jan 19 19:16:29.671 GENERAL: reset done.
